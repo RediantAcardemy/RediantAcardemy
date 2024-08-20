@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+	font-family: 'Jua', sans-serif;
+}
+
+/* 헤더 */
+
+.header {
+    padding: 30px 70px;
+    border-bottom: 3px solid #6706A5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    width: 250px;
+    height: 105px;
+}
+
+.page_name {
+    margin-left: 50px;
+    font-size: 3rem;
+}
+
+.main_title {
+    margin-right: 20px;
+}
+
+.main_title_text {
+    font-size: 2rem;
+}
+
+.main_title_minitext {
+    font-size: 1.2rem;
+}
+
+/* 메인 */
+
+.regist_box {
+    display: flex;
+    justify-content: center;
+}
+
+.regist_welcome {
+    margin: 20px auto;
+    font-size: 1.5rem;
+}
+
+.regist_welcome >span {
+    color: #6706A5;
+}
