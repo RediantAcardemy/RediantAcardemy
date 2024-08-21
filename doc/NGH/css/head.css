@@ -11,6 +11,11 @@ header {
     border-bottom: 3px solid #7c2aab;
 }
 
+main {
+    width: 70%;
+    margin: 2rem auto;
+}
+
 .logo{
     width: 300px;
     height: 100px;
