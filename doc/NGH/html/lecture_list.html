@@ -1,12 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>강의 리스트</title>
+    <title>강의리스트</title>
     <link rel="stylesheet" href="../css/lecture_list.css">
 </head>
 <body>
-    
+    <header>
+        <div class="auth_container">
+            <button>로그인</button>
+            <button>회원가입</button>
+        </div>
+        <div class="head_container">
+            <img src="/doc/RadiantAcademy_img/logo.png" alt="" class="logo_img">
+            <div class="saerch_container">
+                <input type="text" placeholder="Search" class="search_box">
+                <button>
+                    <img src="/doc/RadiantAcademy_img/search.png" alt="" class="search_icon">
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav_list_container">
+            <div class="nav_list_box">
+                <button class="">선생님</button>
+                <button class="select_button">강의</button>
+                <button class="">공지사항</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="filter_nav">
+            <button class="none_select_btn">전체</button>
+            <button class="none_select_btn">LOL</button>
+            <button class="select_btn">발로란트</button>
+            <button class="none_select_btn">오버워치</button>
+            <button class="none_select_btn">배틀그라운드</button>
+        </div>
+
+        <div class="lecture_container">
+            <div class="lecture_item">
+                <img src="/doc/RadiantAcademy_img/image 76.png" alt="Lecture Thumbnail">
+                <button class="lecture_title">뇌지컬 특강</button>
+                <div class="lecture_info">
+                    <p>발로란트</p>|<p>김나라선생님</p>|<p>강의수 10 / 10</p>
+                </div>
+                <div class="lecture_actions">
+                    <button class="lecture_button">수강신청</button>
+                </div>
+            </div>
+            <!-- more items -->
+        </div>
+
+        <div class="pagination">
+            <button>
+                <img src="/doc/RadiantAcademy_img/left_arrow.png" alt="">
+            </button>
+            <button class="active_button">1</button>
+            <button class="">2</button>
+            <button class="">3</button>
+            <button class="">4</button>
+            <button class="">5</button>
+            <button>
+                <img src="/doc/RadiantAcademy_img/right_arrow.png" alt="">
+            </button>
+        </div>
+    </main>
 </body>
 </html>
