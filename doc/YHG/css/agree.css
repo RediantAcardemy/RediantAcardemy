@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'PTBandocheB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/PTBandocheB.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PTBandocheB';
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    width: 70%;
+    margin: 2rem auto;
+}
+
+
+/* 헤더 */
+
+.header {
+    padding: 30px 70px;
+    border-bottom: 3px solid #6706A5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    width: 250px;
+    height: 105px;
+}
+
+.page_name {
+    margin-left: 50px;
+    font-size: 2rem;
+}
+
+.main_title {
+    margin-right: 20px;
+}
+
+.main_title_text {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.main_title_minitext {
+    font-size: 1.2rem;
+}
+
+/* 메인 */
+
+.agree_box {
+    display: flex;
+    justify-content: center;
+}
+
+.agree_welcome_box {
+    display: flex;
+    justify-content: center;
+}
+
+.agree_welcome {
+    margin: 50px auto;
+    font-size: 1.5rem;
+}
+
+.agree_welcome >span {
+    color: #6706A5;
+}
+
+.agree_mini_title {
+    display: flex;
+    align-items: center;
+}
+
+.agree_img {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.conditions_title,
+.personal_info_title {
+    font-size: 1.5rem;
+}
+
+.conditions_box {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #e4e4e4;
+    width: 800px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.conditions_box::-webkit-scrollbar {
+    width: 11px;
+}
+
+.conditions_box::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.conditions_box::-webkit-scrollbar-thumb {
+    background-color: #AD9FD4;
+}
+
+
+.agree_check {
+    display: flex;
+    align-items: center;
+    margin: 20px 20px 50px;
+}
+
+.conditions_check,
+.personal_check {
+    margin-right: 10px;
+    display: inline-block;
+    border: 2px solid #6706A5;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.conditions_check:hover,
+.personal_check:hover {
+    transform: scale(1.04);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .conditions_check {
+    background-image: url('../../RadiantAcademy_img/check.png');
+    background-size: contain;
+}
+
+input[type="checkbox"]:checked + .personal_check {
+    background-image: url('../../RadiantAcademy_img/check.png');
+    background-size: contain;
+}
+
+table {
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #e4e4e4;
+    width: 33.3%;
+    text-align: center;
+    padding: 10px;
+}
+
+.personal_info_text {
+    margin: 10px;
+}
+
+.agree_btn_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agree_btn {
+    margin: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #AD9FD4;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.agree_btn:hover {
+    transform: scale(1.04);
+}

@@ -1,8 +1,21 @@
+@font-face {
+    font-family: 'PTBandocheB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/PTBandocheB.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-	font-family: 'Jua', sans-serif;
+    font-family: 'PTBandocheB';
+    line-height: 25px;
+}
+
+main {
+    width: 70%;
+    margin: 2rem auto;
 }
 
 /* 헤더 */
@@ -27,7 +40,7 @@
 
 .page_name {
     margin-left: 50px;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .main_title {
@@ -36,6 +49,7 @@
 
 .main_title_text {
     font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .main_title_minitext {
@@ -47,13 +61,201 @@
 .regist_box {
     display: flex;
     justify-content: center;
+    margin: 60px;
 }
 
-.regist_welcome {
-    margin: 20px auto;
+.regist_title_box {
+    display: flex;
+    align-items: center;
+}
+
+.regist_title_box >img {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.regist_title {
     font-size: 1.5rem;
 }
 
-.regist_welcome >span {
+table {
+    margin: 10px;
+    border-collapse: collapse;
+    width: 900px;
+}
+
+th {
+    border: 1px solid #e4e4e4;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    background-color: #F9F8FA;
+}
+
+td {
+    border: 1px solid #e4e4e4;
+    text-align: center;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+td >input {
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.regist_input {
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+}
+
+.account_box {
+    display: flex;
+    align-items: center;
+}
+
+.accuont_input {
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.regist_guide {
+    margin: 10px 10px 0;
+    font-size: 0.8rem;
+    color: #AD9FD4;
+}
+
+.regist_input_btn {
+    padding: 2px 10px;
+    border: 2px solid #AD9FD4;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 80px;
+    cursor: pointer;
+}
+
+.regist_input_btn:hover {
+    transform: scale(1.04);
+}
+
+.regist_radio_box {
+    display: flex;
+}
+
+.regist_radio {
+    display: flex;
+    align-items: center;
+}
+
+.regist_radio >p {
+    margin-right: 30px;
+}
+
+.gender_m,
+.gender_w {
+    margin-right: 10px;
+    display: inline-block;
+    border: 2px solid #6706A5;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.gender_m:hover,
+.gender_w:hover {
+    transform: scale(1.04);
+}
+
+input[type="radio"]:checked + .gender_m {
+    background-image: url('../../RadiantAcademy_img/check.png');
+    background-size: contain;
+}
+
+input[type="radio"]:checked + .gender_w {
+    background-image: url('../../RadiantAcademy_img/check.png');
+    background-size: contain;
+}
+
+.regist_address {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 5px;
+}
+
+.regist_address_item1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+}
+
+.regist_address_item2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+}
+
+.regist_address_item3 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.regist_address_item4 {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+}
+
+.regist_address_item5 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.regist_text {
+    margin: 20px 10px;
     color: #6706A5;
+}
+
+.regist_btn_box {
+    display: flex;
+    justify-content: center;
+}
+
+.regist_btn {
+    margin: 100px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #AD9FD4;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.regist_btn:hover {
+    transform: scale(1.04);
+}
+
+.regist_err_msg {
+    margin: 10px 10px 0;
+    font-size: 0.8rem;
+    color: red;
+}
+
+.regist_err_msg2 {
+    font-size: 0.8rem;
+    color: red;
 }
